@@ -20,7 +20,7 @@ class LibraryActivity extends AppCompatActivity {
             bookList.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
 
             ArrayList<Book> list = new ArrayList<>();
-            final LibraryAdapter adapter = new LibraryAdapter(list);
+            final LibraryAdapter adapter = new LibraryAdapter();
 
             //attach adapter to recyclerview
             bookList.setAdapter(adapter);
